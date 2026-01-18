@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo gris claro */
+}
+h1, h2, h3 {
+    color: #007bff; /* Azul para títulos */
+}
+.container {
+    max-width: 800px; /* Ancho máximo para centrar */
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Puedes agregar más estilos aquí más adelante */
