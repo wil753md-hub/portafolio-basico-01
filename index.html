@@ -1,102 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos básicos: codificación y responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Wilfred Rivera</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!-- Bootstrap gratis para responsive -->
-    <link rel="stylesheet" href="styles.css"> <!-- Tus estilos personalizados -->
+    
+    <!-- Título que aparece en la pestaña del navegador (muy importante para SEO y profesionalismo) -->
+    <title>Wilfred Rivera | Estudiante de Ingeniería Civil</title>
+    
+    <!-- Bootstrap CSS: framework para diseño responsive rápido (columnas, botones, tarjetas, etc.) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Icons: iconos gratuitos (LinkedIn, email, descarga, etc.) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Tu archivo de estilos personalizados (lo que hace único tu diseño) -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-
-
 <body>
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Wilfred Rivera</h1>
-        <div class="text-center mb-4">
-    <img src="1366_2000.jpg" alt="Wilfred Rivera" class="rounded-circle img-fluid" style="width: 180px; height: 180px; object-fit: cover; border: 5px solid white;">
-</div>
-        <p>Estudiante de Ingeniería Civil - Universidad Nacional de Ingeniería (UNI), Lima, Perú</p>
+
+    <!-- Navbar fija en la parte superior (se queda visible al hacer scroll) -->
+    <!-- Es clave para navegación rápida en sitios de una página -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Wilfred Rivera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces con #id para hacer scroll suave a las secciones -->
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/Header: la primera impresión fuerte del sitio -->
+    <!-- Aquí va la foto grande, nombre y un botón de llamada a acción (CTA) -->
+    <header class="hero bg-primary text-white text-center py-5" id="hero">
+        <div class="container py-5">
+            <!-- Foto de perfil circular con sombra y borde -->
+            <img src="1366_2000.jpg" alt="Wilfred Rivera" class="rounded-circle img-fluid mb-4 profile-pic">
+            <h1 class="display-4 fw-bold">Wilfred Rivera</h1>
+            <p class="lead">Estudiante de Ingeniería Civil – UNI, Lima, Perú</p>
+            <p class="mt-3">Apasionado por estructuras sismorresistentes y sostenibilidad</p>
+            <!-- Botón para descargar CV (el archivo debe estar en la carpeta raíz) -->
+            <a href="cv-wilfred-rivera.pdf" class="btn btn-light btn-lg mt-3" download>
+                <i class="bi bi-download me-2"></i> Descargar CV
+            </a>
+        </div>
     </header>
 
-    <section class="container my-5" id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Soy un estudiante apasionado por la Ingeniería Civil, con enfoque en estructuras sostenibles y urbanismo. Actualmente en mi quinto año en la UNI, busco oportunidades para aplicar mis conocimientos en proyectos reales. Me interesa el diseño de infraestructuras resistentes a sismos, común en regiones como Perú.</p>
-    </section>
+    <!-- Contenido principal -->
+    <main class="container my-5">
 
-    <section class="container my-5" id="educacion">
-        <h2>Educación</h2>
-        <ul>
-            <li><strong>Universidad Nacional de Ingeniería (UNI), Lima</strong> - Ingeniería Civil (2022 - Presente). Promedio: 16/20.</li>
-            <li><strong>Colegio Secundario Ficticio, Lima</strong> - Bachillerato en Ciencias (2018 - 2021).</li>
-        </ul>
-    </section>
+        <!-- Sección Sobre Mí: presentación personal -->
+        <section id="sobre-mi" class="mb-5">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p class="lead">Soy un estudiante de quinto año de Ingeniería Civil en la Universidad Nacional de Ingeniería (UNI), con fuerte interés en el diseño de infraestructuras seguras y sostenibles. En un país sísmico como Perú, me motiva contribuir al desarrollo de construcciones resistentes y eficientes que mejoren la calidad de vida.</p>
+        </section>
 
-    <section class="container my-5" id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Proyecto 1: Diseño de Puente Peatonal</h3>
-                <p>Desarrollé un modelo estructural usando software como SAP2000. Incluyó análisis de cargas y materiales ecológicos. Resultado: Puente resistente a vientos de 100 km/h.</p>
+        <!-- Educación: usa tarjetas (cards) de Bootstrap para un look moderno -->
+        <section id="educacion" class="mb-5">
+            <h2 class="section-title">Educación</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Ingeniería Civil</h5>
+                    <p class="card-text">Universidad Nacional de Ingeniería (UNI), Lima<br>2022 – Presente<br>Promedio: 16/20</p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3>Proyecto 2: Análisis de Suelos en Zona Urbana</h3>
-                <p>Estudio geotécnico para un edificio ficticio en Lima. Usé pruebas de laboratorio para evaluar estabilidad sísmica. Recomendaciones: Refuerzo con pilotes profundos.</p>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Bachillerato en Ciencias</h5>
+                    <p class="card-text">Colegio Secundario Ficticio, Lima<br>2018 – 2021</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container my-5" id="habilidades">
-    <h2>Habilidades Técnicas</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <h5>Software</h5>
-            <ul>
-                <li>AutoCAD</li>
-                <li>SAP2000</li>
-                <li>Revit (Básico)</li>
-                <li>ETABS</li>
-                <li>Microsoft Project</li>
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <h5>Conocimientos</h5>
-            <ul>
-                <li>Análisis estructural</li>
-                <li>Diseño sismorresistente</li>
-                <li>Geotecnia básica</li>
-                <li>Concreto armado</li>
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <h5>Idiomas</h5>
-            <ul>
-                <li>Español - Nativo</li>
-                <li>Inglés - Intermedio (B1/B2)</li>
-            </ul>
-        </div>
-    </div>
-</section>
+        <!-- Habilidades: organizadas en 3 columnas con tarjetas -->
+        <section id="habilidades" class="mb-5">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Software</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">AutoCAD</li>
+                                <li class="list-group-item">SAP2000</li>
+                                <li class="list-group-item">Revit (Básico)</li>
+                                <li class="list-group-item">ETABS</li>
+                                <li class="list-group-item">Microsoft Project</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite para las otras dos columnas (Conocimientos e Idiomas) -->
+                <!-- ... (el código que ya tenías, pero dentro de <div class="card h-100 shadow-sm">) -->
+            </div>
+        </section>
 
-    <section class="container my-5" id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: wilfred.rivera@ficticio.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/wilfred-rivera-ficticio" target="_blank">linkedin.com/in/wilfred-rivera</a></p>
-        <p>Teléfono: +51 987 654 321 (Ficticio)</p>
-        <p>
-    <a href="https://www.linkedin.com/in/tu-usuario-real" target="_blank" class="btn btn-primary me-3">
-        <i class="bi bi-linkedin"></i> LinkedIn
-    </a>
-    <a href="mailto:tuemailreal@gmail.com" class="btn btn-outline-primary">
-        <i class="bi bi-envelope"></i> Email
-    </a>
-</p>
-    </section>
+        <!-- Proyectos: tarjetas con efecto hover (elevación al pasar el mouse) -->
+        <section id="proyectos" class="mb-5">
+            <h2 class="section-title">Proyectos Académicos</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card project-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño de Puente Peatonal</h5>
+                            <p class="card-text">Modelo estructural en SAP2000. Análisis de cargas, materiales ecológicos y resistencia a vientos de hasta 100 km/h.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agrega aquí más tarjetas para otros proyectos -->
+            </div>
+        </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2026 Wilfred Rivera. Todos los derechos reservados.</p>
+        <!-- Contacto: botones grandes y llamativos -->
+        <section id="contacto">
+            <h2 class="section-title">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="mb-4">Estoy disponible para colaboraciones, prácticas o consultas. ¡Contáctame!</p>
+                    <a href="https://www.linkedin.com/in/tu-usuario-real" target="_blank" class="btn btn-primary btn-lg me-3 mb-3">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:wilfred.rivera@ejemplo.com" class="btn btn-outline-primary btn-lg me-3 mb-3">
+                        <i class="bi bi-envelope"></i> Email
+                    </a>
+                    <a href="https://wa.me/51987654321" target="_blank" class="btn btn-success btn-lg mb-3">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer simple y limpio -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2026 Wilfred Rivera. Hecho con pasión por la Ingeniería Civil.</p>
     </footer>
 
+    <!-- Bootstrap JavaScript: necesario para que funcione el menú hamburguesa y otros efectos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
