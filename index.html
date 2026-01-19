@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de Wilfred Rivera, estudiante de Ingeniería Civil de la UNI. Especializado en estructuras y sostenibilidad.">
-    <title>Wilfred Rivera | Ingeniería Civil UNI</title>
+    <meta name="description" content="Portafolio de Wilfred C, estudiante de Ingeniería Civil de la UNI. Especializado en estructuras y sostenibilidad.">
+    <title>Wilfred C | Ingeniería Civil UNI</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
                 <!-- Icono de edificio en la navbar -->
-                <i class="bi bi-buildings-fill me-2"></i>WILFRED RIVERA
+                <i class="bi bi-buildings-fill me-2"></i>WILFRED C
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -37,6 +37,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="#educacion">Formación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificados">Certificados</a></li>
                     <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
                     <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
@@ -142,7 +143,81 @@
         </div>
     </section>
 
-    <!-- HABILIDADES -->
+
+<!-- CERTIFICADOS Y CAPACITACIONES -->
+<section id="certificados" class="bg-light">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Certificados y Capacitaciones</h2>
+        <div class="row g-4 justify-content-center">
+
+            <!-- Certificado 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body text-center">
+                        <i class="bi bi-patch-check-fill text-success fs-1 mb-3"></i>
+                        <h5 class="card-title">Revit para BIM - Nivel Intermedio </h5>
+                        <p class="card-text small text-muted"> ECIC / Autodesk – 2025</p>
+                        <!-- Click para ver certificado en modal -->
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal1">
+                            Ver Certificado
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificado 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body text-center">
+                        <i class="bi bi-patch-check-fill text-success fs-1 mb-3"></i>
+                        <h5 class="card-title">Análisis Sísmico con ETABS</h5>
+                        <p class="card-text small text-muted">UNI / Instituto del Concreto – 2025</p>
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal2">
+                            Ver Certificado
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agrega más certificados aquí con col-md-6 col-lg-4 -->
+
+        </div>
+    </div>
+</section>
+
+<!-- Modals para ver certificados grandes (uno por certificado) -->
+<!-- Modal 1 -->
+<div class="modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certModalLabel1">Revit para BIM - Nivel Intermedio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="certificados/revit-bim-2024.jpg" alt="Certificado Revit BIM" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="certModal2" tabindex="-1" aria-labelledby="certModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certModalLabel2">Análisis Sísmico con ETABS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="certificados/etabs-sismico-2025.jpg" alt="Certificado ETABS" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     <section id="habilidades" class="bg-light">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Habilidades Técnicas</h2>
